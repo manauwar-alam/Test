@@ -27,6 +27,7 @@ class OdEv {
 						this.notify();
 					}	
 						try {
+							if(i<=20)
 							this.wait();
 						} catch (InterruptedException e) {
 							e.printStackTrace();
@@ -35,6 +36,8 @@ class OdEv {
 		}
 	
 }
+
+
 public class ThreadDemo {
 	static OdEv obj = new OdEv();
 	public static void main(String args[]) {
@@ -43,7 +46,7 @@ public class ThreadDemo {
 			for(int i=0;i<10;i++) {
 				obj.printOdd();
 				try {
-					Thread.sleep(1000);
+					Thread.sleep(100);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
@@ -57,17 +60,26 @@ public class ThreadDemo {
 				for(int i=0;i<10;i++) {
 					obj.printEven();
 					try {
-						Thread.sleep(1000);
+						Thread.sleep(100);
 					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
 						e.printStackTrace();
 					}
 				}
 			}
 		  };	
 		
-		oddThread.start();
-		evenThread.start();
+		
+		try {
+			oddThread.start();
+			evenThread.start();
+			oddThread.join();
+			evenThread.join();
+		} catch (InterruptedException e) {
+
+			e.printStackTrace();
+		}
+		
+		System.out.println("Printing over");
 		
 } 
 }
