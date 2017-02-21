@@ -38,7 +38,7 @@ class OdEv {
 }
 
 
-public class ThreadDemo {
+public class OddEvenThreadDemo {
 	static OdEv obj = new OdEv();
 	public static void main(String args[]) {
 	  Thread oddThread = new Thread() {
