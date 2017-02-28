@@ -1,13 +1,26 @@
 package com.manauwar;
 
 public class Test {
+	String s = null;
+	public Test(String s)
+	{
+		System.out.println("Test class called "+s);
+	}
 	
+	public Test()
+	{
+		
+		
+	}
+
+	public void myMethod()
+	{
+		System.out.println("Test class called "+s);
+	}
 	
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		System.out.println("hi");
+	public String toString()
+	{
+		return s;
 	}
 
 }
