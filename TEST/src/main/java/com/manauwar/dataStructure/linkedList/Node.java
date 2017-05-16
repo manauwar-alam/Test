@@ -3,12 +3,12 @@ package com.manauwar.dataStructure.linkedList;
 public class Node<T> implements Comparable<T>
 {
 	T value;
-	Node<T> link;
+	Node<T> next;
 	
-	public Node(T value, Node<T> link)
+	public Node(T value, Node<T> next)
 	{
 		this.value = value;
-		this.link = link;
+		this.next = next;
 	}
 	
 	public void setValue(T value)
@@ -21,13 +21,13 @@ public class Node<T> implements Comparable<T>
 		return value;
 	}
 	
-	public void setLink(Node<T> link)
+	public void setNext(Node<T> next)
 	{
-		this.link = link;
+		this.next = next;
 	}
 	
-	public Node<T> getLink(){
-		return link;
+	public Node<T> getNext(){
+		return next;
 	}
 
 	@Override
