@@ -27,10 +27,12 @@ public class TreeTest {
 		
 		Height heignt = new Height();
 		Integer heigntNode = heignt.getHeightOfNode(root, 1, 10);
-		System.out.println("\nHeignt of node 7 is : "+heigntNode);
+		System.out.println("\nHeignt of node 10 is : "+heigntNode);
 		
 		Integer heigntTree = heignt.getHeightOfTree(root);
 		System.out.println("\nHeignt of tree is : "+heigntTree);
+		
+		tree.levelOrderQueue(root);
 		
 		
 		
