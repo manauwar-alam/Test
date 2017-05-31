@@ -9,6 +9,15 @@ public class BST {
 		this.root = root;
 	}
 	
+	
+	public void display(Node root){
+		if(root!=null){
+			display(root.left);
+			System.out.print(" " + root.data);
+			display(root.right);
+		}
+	}
+	
 	public void insert(int data) {
 		
 		Node newNode = new Node(data);

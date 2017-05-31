@@ -4,7 +4,7 @@ public class HeightOfTree {
 	
 	public Integer getHeightOfNodeInTree(Node root,Integer height, Integer data)
 	{
-		if(data == null)
+		if(root == null)
 			return 0;
 		if(root.data == data)
 			return height;
