@@ -25,9 +25,16 @@ public class TreeTest {
 		
 		tree.display(root);
 		
-		HeightOfTree heigntOfNode = new HeightOfTree();
-		Integer heignt = heigntOfNode.getHeightOfNodeInTree(root, 1, 10);
-		System.out.println("\nHeignt of node 7 is : "+heignt);
+		Height heignt = new Height();
+		Integer heigntNode = heignt.getHeightOfNode(root, 1, 10);
+		System.out.println("\nHeignt of node 7 is : "+heigntNode);
+		
+		Integer heigntTree = heignt.getHeightOfTree(root);
+		System.out.println("\nHeignt of tree is : "+heigntTree);
+		
+		
+		
+		
 	}
 
 }
