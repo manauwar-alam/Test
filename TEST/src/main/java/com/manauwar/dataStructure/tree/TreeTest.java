@@ -32,7 +32,7 @@ public class TreeTest {
 		Integer heigntTree = heignt.getHeightOfTree(root);
 		System.out.println("\nHeignt of tree is : "+heigntTree);
 		
-		tree.levelOrderQueue(root);
+		tree.levelOrderTraverdalUsingQueue(root);
 		
 		
 		

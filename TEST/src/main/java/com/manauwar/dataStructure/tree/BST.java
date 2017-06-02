@@ -21,7 +21,7 @@ public class BST {
 		}
 	}
 	
-	public void levelOrderQueue(Node root){
+	public void levelOrderTraverdalUsingQueue(Node root){
  		Queue q = new LinkedList();
  		int levelNodes =0; 
 		if(root==null) return;
@@ -38,6 +38,8 @@ public class BST {
 			System.out.println("");
 		}
 	}
+	
+	
 	
 	public void insert(int data) {
 		
